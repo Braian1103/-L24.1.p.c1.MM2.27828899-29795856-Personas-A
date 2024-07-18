@@ -39,7 +39,7 @@ por. procesarpersonas(per12)
 let salida = document.getElementById("salida");
 
 salida.innerHTML =`
-Porcentaje de mujeres procesadas: ${por.porcentajemujer()}<br>
+Porcentaje de mujeres procesadas: ${por.porcentajemujer().toFixed(2)}<br>
 
 ${por.cantidad()}
 `

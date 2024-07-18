@@ -5,12 +5,13 @@ export default class porcentaje{
         this.porcenpersona=0;
         this.acupersonas=0;
         this.cantidadp=0;
+        this.cntpers=0;
 
     }
 
     procesarpersonas(s){
         this.acupersonas += s.nun;
-
+        this.cntpers++
         if(s.sexo == "F"){
             this.mujeresprocesadas++
 
@@ -28,13 +29,13 @@ export default class porcentaje{
 
     cantidad(){
         if(this.mujeresprocesadas > this.hombresproce){
-            this.cantidadp = "Hay mas mujeres"
+            return "Hay mas mujeres"
 
         }if(this.mujeresprocesadas < this.hombresproce){
-            this.cantidadp = "Hay mas hombres"
+            return "Hay mas hombres"
 
         }if(this.mujeresprocesadas <= this.hombresproce){
-            this.cantidadp = "Ambos por igual"
+        return "Ambos por igual"
 
         }
   }

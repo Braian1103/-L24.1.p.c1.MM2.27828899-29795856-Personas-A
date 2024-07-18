@@ -6,7 +6,7 @@ export default class persona{
     }
 
     set sexo(s){
-        this.nombre= +s;
+        this.nombre= s;
     }
 
     get sexo (){
