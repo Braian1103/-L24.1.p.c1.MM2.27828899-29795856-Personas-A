@@ -9,8 +9,7 @@ export default class porcentaje{
     }
 
     procesarpersonas(s){
-        this.acupersonas += s.nombre;
-        this.acupersonas++
+        this.acupersonas += s.nun;
 
         if(s.sexo == "F"){
             this.mujeresprocesadas++
@@ -19,12 +18,12 @@ export default class porcentaje{
             this.hombresproce++
 
         }
+      
 
     }
 
     porcentajemujer(){
-        return (this.mujeresprocesadas / this.acupersonas) * 100;
-
+        return (this.mujeresprocesadas / this.acupersonas) * 100
     }
 
     cantidad(){

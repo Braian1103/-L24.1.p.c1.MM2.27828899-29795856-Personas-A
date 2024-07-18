@@ -1,14 +1,15 @@
 export default class persona{
-    constructor(nombre,sexo){
+    constructor(nombre,nun,sexo){
         this.nombre = nombre;
         this.sexo = sexo;
+        this.nun= nun;
     }
 
     set sexo(s){
-        this.sexo= +s;
+        this.nombre= +s;
     }
 
     get sexo (){
-        return this.sexo;
+        return this.nombre;
     }
 }
